@@ -11,7 +11,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express();
 
 //connect to MongoDB
-const dbURI = 'mongodb+srv://Admin:Admin19121985@cluster0.y8k496w.mongodb.net/?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://Username&Password=local!@cluster0.y8k496w.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(dbURI)
     .then(()=> app.listen(port))
     .catch((err) => console.log(err));
